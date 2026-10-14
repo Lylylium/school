@@ -6,7 +6,7 @@
 /*   By: manguyen <manguyen@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/14 18:07:02 by manguyen          #+#    #+#             */
-/*   Updated: 2026/10/14 23:25:41 by manguyen         ###   ########.fr       */
+/*   Updated: 2026/10/14 23:34:35 by manguyen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,15 +33,16 @@ void	*ft_memcpy(void *dest, const void *src, size_t n);
 size_t	ft_strlcpy(char *dest, const char *src, size_t n);
 size_t	ft_strlcat(char *dest, const char *src, size_t n);
 int		ft_toupper(int c);
-// int		ft_tolower(int c);
-// ft_strchr
-// ft_strrchr
+int		ft_tolower(int c);
+// char	*ft_strchr(const char *s, int c);
+// char	*ft_strrchr(const char *s, int c);
 // ft_strncmp
 // ft_memchr
 // ft_memcmp
 // ft_strnstr
 // ft_atoi
 
+// With malloc
 // ft_calloc
 // ft_strdup
 
