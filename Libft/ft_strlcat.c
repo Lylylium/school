@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: manguyen <manguyen@student.42lausanne.ch>  +#+  +:+       +#+        */
+/*   By: manguyen <manguyen@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/14 18:10:38 by manguyen          #+#    #+#             */
-/*   Updated: 2026/10/14 18:14:04 by manguyen         ###   ########.ch       */
+/*   Updated: 2026/10/14 22:46:43 by manguyen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,31 +15,29 @@
 size_t	ft_strlcat(char *dest, const char *src, size_t n)
 {
 	int	i;
-	int j;
-	size_t l;
+	int	j;
+	unsigned char	*d;
+	unsigned char	*s;
 
 	i = 0;
-	j = ft_strlen(dest)-1;
-	printf("%c", dest[j]);
-	printf("l0= %d", j);
-	while (n--)
-	{
-		dest[j] = src[i];
+	j = 0;
+	d = (unsigned char *) dest;
+	s = (unsigned char *) src;
+	while (d[i])
 		i++;
-		j++;
-	}
-	dest[j] = '\0';
-	l = ft_strlen(dest)*sizeof(char);
-	return (l);
+	while (n--)
+		d[i++] = s[j++];
+	dest[i] = '\0';
+	return (ft_strlen(dest));
 }
 
-int	main(void)
-{
-	const char	*src = "boujour tout le monde";
-	char	dest[] = "salut la famille";
-	size_t	size;
+// int	main(void)
+// {
+// 	const char	*src = "bonjour tout le monde";
+// 	char	dest[] = "salut la famille aslifjoijflamsfd";
+// 	size_t	size;
 
-	size = ft_strlcat(dest, src, 10*sizeof(char));
-	printf("size = %ld", size);
-	return (0);
-}
+// 	size = ft_strlcat(dest, src, 6);
+// 	printf("size = %ld", size);
+// 	return (0);
+// }
