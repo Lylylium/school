@@ -3,25 +3,26 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: manguyen <manguyen@student.42lausanne.ch>  +#+  +:+       +#+        */
+/*   By: manguyen <manguyen@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/14 18:07:02 by manguyen          #+#    #+#             */
-/*   Updated: 2026/10/14 18:07:02 by manguyen         ###   ########.ch       */
+/*   Updated: 2026/10/14 23:25:41 by manguyen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
+#include <stdlib.h>
 #include <stddef.h>
 #include <string.h>
 
 #ifndef LIBFT_H
 #define LIBFT_H
 
-int		ft_isalpha(char c);
-int		ft_isdigit(char c);
-int		ft_isalnum(char c);
-int		ft_isascii(char c);
-int		ft_isprint(char c);
+int		ft_isalpha(int c);
+int		ft_isdigit(int c);
+int		ft_isalnum(int c);
+int		ft_isascii(int c);
+int		ft_isprint(int c);
 
 int		ft_strlen(char *str);
 void	*ft_memset(void *s, int c, size_t n);
@@ -30,9 +31,9 @@ void	*ft_memcpy(void *dest, const void *src, size_t n);
 // void	*ft_memmove(void *dest, const void *src, size_t n);
 
 size_t	ft_strlcpy(char *dest, const char *src, size_t n);
-// size_t	ft_strlcat(char *dest, const char *src, size_t n);
-// ft_toupper
-// ft_tolower
+size_t	ft_strlcat(char *dest, const char *src, size_t n);
+int		ft_toupper(int c);
+// int		ft_tolower(int c);
 // ft_strchr
 // ft_strrchr
 // ft_strncmp

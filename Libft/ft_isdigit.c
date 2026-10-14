@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isdigit.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: manguyen <manguyen@student.42lausanne.ch>  +#+  +:+       +#+        */
+/*   By: manguyen <manguyen@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/14 10:29:34 by manguyen          #+#    #+#             */
-/*   Updated: 2026/10/14 10:29:38 by manguyen         ###   ########.ch       */
+/*   Updated: 2026/10/14 23:24:52 by manguyen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isdigit(char c)
+int	ft_isdigit(int c)
 {
-	if (c && c >= '0' && c <= '9')
+	if (c && c >= 48 && c <= 57)
 		return (1);
 	return (0);
 }

@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isalpha.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: manguyen <manguyen@student.42lausanne.ch>  +#+  +:+       +#+        */
+/*   By: manguyen <manguyen@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/14 10:21:14 by manguyen          #+#    #+#             */
-/*   Updated: 2026/10/14 10:21:14 by manguyen         ###   ########.ch       */
+/*   Updated: 2026/10/14 23:25:01 by manguyen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isalpha(char c)
+int	ft_isalpha(int c)
 {
-	if (c && ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z')))
+	if (c && ((c >= 97 && c <= 122) || (c >= 65 && c <= 90)))
 		return (1);
 	return (0);
 }

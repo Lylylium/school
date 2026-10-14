@@ -3,17 +3,17 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isalnum.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: manguyen <manguyen@student.42lausanne.ch>  +#+  +:+       +#+        */
+/*   By: manguyen <manguyen@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/14 10:31:12 by manguyen          #+#    #+#             */
-/*   Updated: 2026/10/14 10:31:57 by manguyen         ###   ########.ch       */
+/*   Updated: 2026/10/14 23:23:35 by manguyen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isalnum(char c)
+int	ft_isalnum(int c)
 {
-	if (c && ((c >= 'a' && c <= 'z')
-			|| (c >= 'A' && c <= 'Z') || (c >= '0' && c <= '9')))
+	if (c && ((c >= 97 && c <= 122)
+			|| (c >= 65 && c <= 90) || (c >= 48 && c <= 57)))
 		return (1);
 	return (0);
 }

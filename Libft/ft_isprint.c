@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isprint.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: manguyen <manguyen@student.42lausanne.ch>  +#+  +:+       +#+        */
+/*   By: manguyen <manguyen@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/14 10:12:55 by manguyen          #+#    #+#             */
-/*   Updated: 2026/10/14 10:17:57 by manguyen         ###   ########.ch       */
+/*   Updated: 2026/10/14 23:24:43 by manguyen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isprint(char c)
+int	ft_isprint(int c)
 {
 	if (c && c >= 32 && c < 127)
 		return (1);
