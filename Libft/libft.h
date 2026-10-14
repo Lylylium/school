@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: manguyen <manguyen@student.42lausanne.ch>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/10/14 15:21:56 by manguyen          #+#    #+#             */
-/*   Updated: 2026/10/14 16:24:45 by manguyen         ###   ########.ch       */
+/*   Created: 2026/10/14 18:07:02 by manguyen          #+#    #+#             */
+/*   Updated: 2026/10/14 18:07:02 by manguyen         ###   ########.ch       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,10 +27,10 @@ int		ft_strlen(char *str);
 void	*ft_memset(void *s, int c, size_t n);
 void	ft_bzero(void *s, size_t n);
 void	*ft_memcpy(void *dest, const void *src, size_t n);
-void	*ft_memmove(void *dest, const void *src, size_t n);
+// void	*ft_memmove(void *dest, const void *src, size_t n);
 
 size_t	ft_strlcpy(char *dest, const char *src, size_t n);
-// size_t	ft_strcat(char *dest, const char *src, size_t n);
+// size_t	ft_strlcat(char *dest, const char *src, size_t n);
 // ft_toupper
 // ft_tolower
 // ft_strchr

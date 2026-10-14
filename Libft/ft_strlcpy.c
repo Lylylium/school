@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: manguyen <manguyen@student.42lausanne.ch>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/10/14 17:43:57 by manguyen          #+#    #+#             */
-/*   Updated: 2026/10/14 17:49:44 by manguyen         ###   ########.ch       */
+/*   Created: 2026/10/14 18:10:23 by manguyen          #+#    #+#             */
+/*   Updated: 2026/10/14 18:10:23 by manguyen         ###   ########.ch       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ size_t	ft_strlcpy(char *dest, const char *src, size_t n)
 		dest[i] = src[i];
 		i++;
 	}
-	dest[i] = 0;
+	dest[i] = '\0';
 	l = ft_strlen(dest)*sizeof(char);
 	return (l);
 }
