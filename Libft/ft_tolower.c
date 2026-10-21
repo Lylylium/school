@@ -3,13 +3,12 @@
 /*                                                        :::      ::::::::   */
 /*   ft_tolower.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: manguyen <manguyen@student.42lausanne.c    +#+  +:+       +#+        */
+/*   By: manguyen <manguyen@student.42lausanne.ch>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/10/14 23:26:23 by manguyen          #+#    #+#             */
-/*   Updated: 2026/10/14 23:28:17 by manguyen         ###   ########.fr       */
+/*   Created: 2026/10/21 12:12:45 by manguyen          #+#    #+#             */
+/*   Updated: 2026/10/21 12:12:45 by manguyen         ###   ########.ch       */
 /*                                                                            */
 /* ************************************************************************** */
-
 
 int	ft_tolower(int c)
 {
@@ -19,7 +18,6 @@ int	ft_tolower(int c)
 		return (c);
 	return (0);
 }
-
 
 // int	main(void)
 // {

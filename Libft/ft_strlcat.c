@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: manguyen <manguyen@student.42lausanne.c    +#+  +:+       +#+        */
+/*   By: manguyen <manguyen@student.42lausanne.ch>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/10/14 18:10:38 by manguyen          #+#    #+#             */
-/*   Updated: 2026/10/14 22:46:43 by manguyen         ###   ########.fr       */
+/*   Created: 2026/10/21 12:09:33 by manguyen          #+#    #+#             */
+/*   Updated: 2026/10/21 12:09:37 by manguyen         ###   ########.ch       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 size_t	ft_strlcat(char *dest, const char *src, size_t n)
 {
-	int	i;
-	int	j;
+	int				i;
+	int				j;
 	unsigned char	*d;
 	unsigned char	*s;
 

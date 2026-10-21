@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: manguyen <manguyen@student.42lausanne.c    +#+  +:+       +#+        */
+/*   By: manguyen <manguyen@student.42lausanne.ch>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/10/14 23:34:57 by manguyen          #+#    #+#             */
-/*   Updated: 2026/10/14 23:59:28 by manguyen         ###   ########.fr       */
+/*   Created: 2026/10/21 12:33:30 by manguyen          #+#    #+#             */
+/*   Updated: 2026/10/21 12:34:20 by manguyen         ###   ########.ch       */
 /*                                                                            */
 /* ************************************************************************** */
 

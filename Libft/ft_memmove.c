@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: manguyen <manguyen@student.42lausanne.ch>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/10/14 17:38:18 by manguyen          #+#    #+#             */
-/*   Updated: 2026/10/14 17:42:48 by manguyen         ###   ########.ch       */
+/*   Created: 2026/10/21 13:39:42 by manguyen          #+#    #+#             */
+/*   Updated: 2026/10/21 13:39:53 by manguyen         ###   ########.ch       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,23 +14,13 @@
 
 void	*ft_memmove(void *dest, const void *src, size_t n)
 {
-	int				i;
-	// size_t			m;
 	unsigned char	*d;
 	unsigned char	*s;
 
-	// m = n;
 	d = (unsigned char *)dest;
 	s = (unsigned char *)src;
-	i = 0;
-	if ()
-	{
-		while (n--)
-			{
-				d[i] = s[i];
-				i++;
-			}
-	}
+	if (dest < src)
+		ft_memcpy(dest, src, n);
 	else
 	{
 		while (n--)
@@ -38,6 +28,16 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	}
 	return (dest);
 }
+
+// int	main(void)
+// {
+// 	char	s[100] = "boujour tout le monde";
+// 	char	s2[50] = "tout le";
+
+// 	ft_memmove(s2, s, 10);
+// 	printf("s2 = %s\n", s2);
+// 	return (0);
+// }
 
 // void	*ft_memmove(void *dest, const void *src, size_t n)
 // {

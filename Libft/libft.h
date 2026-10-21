@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: manguyen <manguyen@student.42lausanne.c    +#+  +:+       +#+        */
+/*   By: manguyen <manguyen@student.42lausanne.ch>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/10/14 18:07:02 by manguyen          #+#    #+#             */
-/*   Updated: 2026/10/14 23:34:35 by manguyen         ###   ########.fr       */
+/*   Created: 2026/10/21 15:17:01 by manguyen          #+#    #+#             */
+/*   Updated: 2026/10/21 15:17:05 by manguyen         ###   ########.ch       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,17 +28,17 @@ int		ft_strlen(char *str);
 void	*ft_memset(void *s, int c, size_t n);
 void	ft_bzero(void *s, size_t n);
 void	*ft_memcpy(void *dest, const void *src, size_t n);
-// void	*ft_memmove(void *dest, const void *src, size_t n);
+void	*ft_memmove(void *dest, const void *src, size_t n);
 
 size_t	ft_strlcpy(char *dest, const char *src, size_t n);
 size_t	ft_strlcat(char *dest, const char *src, size_t n);
 int		ft_toupper(int c);
 int		ft_tolower(int c);
-// char	*ft_strchr(const char *s, int c);
-// char	*ft_strrchr(const char *s, int c);
-// ft_strncmp
-// ft_memchr
-// ft_memcmp
+char	*ft_strchr(const char *s, int c);
+char	*ft_strrchr(const char *s, int c);
+int		ft_strncmp(const char *s1, const char *s2, size_t n);
+void	*ft_memchr(const void *s, int c, size_t n);
+int		ft_memcmp(const void *s1, const void *s2, size_t n);
 // ft_strnstr
 // ft_atoi
 

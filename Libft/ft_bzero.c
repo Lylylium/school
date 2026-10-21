@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: manguyen <manguyen@student.42lausanne.ch>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/10/14 12:40:12 by manguyen          #+#    #+#             */
-/*   Updated: 2026/10/14 17:36:14 by manguyen         ###   ########.ch       */
+/*   Created: 2026/10/21 12:13:01 by manguyen          #+#    #+#             */
+/*   Updated: 2026/10/21 12:13:01 by manguyen         ###   ########.ch       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	ft_bzero(void *s, size_t n)
 {
-	int		i;
+	int				i;
 	unsigned char	*t;
 
 	t = (unsigned char *) s;

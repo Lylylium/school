@@ -3,13 +3,12 @@
 /*                                                        :::      ::::::::   */
 /*   ft_toupper.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: manguyen <manguyen@student.42lausanne.c    +#+  +:+       +#+        */
+/*   By: manguyen <manguyen@student.42lausanne.ch>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/10/14 23:02:24 by manguyen          #+#    #+#             */
-/*   Updated: 2026/10/14 23:28:38 by manguyen         ###   ########.fr       */
+/*   Created: 2026/10/21 12:12:29 by manguyen          #+#    #+#             */
+/*   Updated: 2026/10/21 12:12:29 by manguyen         ###   ########.ch       */
 /*                                                                            */
 /* ************************************************************************** */
-
 
 int	ft_toupper(int c)
 {

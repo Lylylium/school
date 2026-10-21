@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isalnum.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: manguyen <manguyen@student.42lausanne.c    +#+  +:+       +#+        */
+/*   By: manguyen <manguyen@student.42lausanne.ch>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/10/14 10:31:12 by manguyen          #+#    #+#             */
-/*   Updated: 2026/10/14 23:23:35 by manguyen         ###   ########.fr       */
+/*   Created: 21/10/2026 12:02:04 by manguyen          #+#    #+#             */
+/*   Updated: 21/10/2026 12:06:52 by manguyen         ###   ########.ch       */
 /*                                                                            */
 /* ************************************************************************** */
 
