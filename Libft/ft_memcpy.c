@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: manguyen <manguyen@student.42lausanne.ch>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/10/21 13:34:02 by manguyen          #+#    #+#             */
-/*   Updated: 2026/10/21 13:35:01 by manguyen         ###   ########.ch       */
+/*   Created: 2026/10/22 13:44:23 by manguyen          #+#    #+#             */
+/*   Updated: 2026/10/22 13:44:23 by manguyen         ###   ########.ch       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,4 +41,3 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 // 	// printf("%p\n",m);
 // 	return (0);
 // }
-

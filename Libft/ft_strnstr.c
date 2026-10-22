@@ -5,21 +5,21 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: manguyen <manguyen@student.42lausanne.ch>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/10/21 17:44:36 by manguyen          #+#    #+#             */
-/*   Updated: 2026/10/21 17:55:43 by manguyen         ###   ########.ch       */
+/*   Created: 2026/10/22 14:57:14 by manguyen          #+#    #+#             */
+/*   Updated: 2026/10/22 14:57:27 by manguyen         ###   ########.ch       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char    *ft_strnstr(const char *big, const char *little, size_t len)
+char	*ft_strnstr(const char *big, const char *little, size_t len)
 {
-	int i;
-	int j;
+	size_t	i;
+	int		j;
 
 	i = 0;
-	if (*little == "")
-		return (big);
+	if (*little == ' ')
+		return ((char *)big);
 	while (i < len)
 	{
 		j = 0;
@@ -31,18 +31,15 @@ char    *ft_strnstr(const char *big, const char *little, size_t len)
 				j++;
 			}
 			if (little[j] == '\0')
-			{
-				printf("%s", big + i - j);
-				return (big[i-j]);
-			}
+				return ((char *) big + (i - j));
 		}
 		i++;
 	}
-	return (0);
+	return ("0");
 }
 
-int	main(void)
-{
-	printf("%s\n", ft_strnstr("Bonjour tout le monde", "tout", 15));
-	return (0);
-}
+// int	main(void)
+// {
+// 	printf("%s\n", ft_strnstr("Bonjour tout le monde", "ond", 105));
+// 	return (0);
+// }

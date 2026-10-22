@@ -5,18 +5,21 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: manguyen <manguyen@student.42lausanne.ch>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/10/21 15:17:01 by manguyen          #+#    #+#             */
-/*   Updated: 2026/10/21 15:17:05 by manguyen         ###   ########.ch       */
+/*   Created: 2026/10/22 15:14:45 by manguyen          #+#    #+#             */
+/*   Updated: 2026/10/22 15:14:45 by manguyen         ###   ########.ch       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <stdlib.h>
-#include <stddef.h>
-#include <string.h>
-
 #ifndef LIBFT_H
-#define LIBFT_H
+# define LIBFT_H
+
+# include <stdio.h>
+# include <stdlib.h>
+# include <stddef.h>
+# include <string.h>
+# include <unistd.h>
+
+# include <limits.h>
 
 int		ft_isalpha(int c);
 int		ft_isdigit(int c);
@@ -37,16 +40,16 @@ int		ft_tolower(int c);
 char	*ft_strchr(const char *s, int c);
 char	*ft_strrchr(const char *s, int c);
 int		ft_strncmp(const char *s1, const char *s2, size_t n);
-void	*ft_memchr(const void *s, int c, size_t n);
+// void	*ft_memchr(const void *s, int c, size_t n);
 int		ft_memcmp(const void *s1, const void *s2, size_t n);
-// ft_strnstr
-// ft_atoi
+// char    *ft_strnstr(const char *big, const char *little, size_t len);
+int		ft_atoi(const char *nptr);
 
 // With malloc
-// ft_calloc
-// ft_strdup
+// void	*ft_calloc(size_t nmemb, size_t size);
+char	*ft_strdup(const char *s);
 
-// char	*ft_substr(char const *s, unsigned int start, size_t len);
+char	*ft_substr(char const *s, unsigned int start, size_t len);
 // char	*ft_strjoin(char const *s1, char const *s2);
 // char	*ft_strtrim(char const *s1, char const *set);
 // char	**ft_split(char const *s, char c);

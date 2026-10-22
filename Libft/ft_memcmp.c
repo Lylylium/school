@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: manguyen <manguyen@student.42lausanne.ch>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/10/21 15:11:14 by manguyen          #+#    #+#             */
-/*   Updated: 2026/10/21 17:12:29 by manguyen         ###   ########.ch       */
+/*   Created: 2026/10/22 10:33:12 by manguyen          #+#    #+#             */
+/*   Updated: 2026/10/22 10:33:12 by manguyen         ###   ########.ch       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,9 +27,6 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	{
 		i++;
 	}
-	// printf("i = %ld\n", i);
-	// printf("%d\n", s11[i]);
-	// printf("%d\n", s22[i]);
 	if (!s11[i] && !s22[i])
 		return (0);
 	return (s11[i] - s22[i]);
@@ -37,12 +34,8 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 
 // int	main(void)
 // {
-// 	// char	s[] = "boujour tout le monde";
-// 	// char	s2[] = "bonj";
 // 	char s[] = {-128, 0, 127, 0};
 // 	char s1[] = {-128, 0, 127, 0};
-// 	// char s2[] = {0, 0, 127, 0};
-// 	// char s3[] = {0, 0, 42, 0};
 
 // 	printf("cmp = %d\n\n", memcmp(s, s1, 4));
 // 	printf("ft_cmp = %d\n", ft_memcmp(s, s1, 4));
