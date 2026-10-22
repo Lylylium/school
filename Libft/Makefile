@@ -10,7 +10,7 @@ SRC = main.c \
 	ft_memmove.c  ft_memcmp.c \
 	ft_atoi.c \
 	ft_strdup.c \
-	ft_substr.c
+	ft_substr.c ft_strjoin.c ft_strtrim.c
 # 	ft_memchr.c ft_strnstr.c ft_calloc.c
 
 OBJ = $(SRC:.c=.o)
