@@ -7,8 +7,14 @@ static int	ft_count_word(char const *s, char c)
 
 	i = 0;
 	count = 0;
+	if (s[i] == c)
+	{
+		while (s[i] == c)
+			i++;
+	}
 	while (s[i++])
 	{
+		
 		if (s[i] == c)
 		{
 			while (s[i] == c)
@@ -18,18 +24,26 @@ static int	ft_count_word(char const *s, char c)
 	}
 	if (s[ft_strlen((char *)s) - 1] != c)
 		count++;
-	printf("count = %d\n", count);
+	// printf("count = %d\n", count);
 	return (count);
 }
 
 static int	ft_count_letter(char *s, char c)
 {
 	int		i;
+	int		count;
 
 	i = 0;
-		while ((s[i] != c) && s[i])
-			i++;
-	return (i + 1);
+	count = 0;
+	while (s[i] == c)
+		i++;
+	while ((s[i] != c) && s[i])
+	{
+		count++;
+		i++;
+	}
+		
+	return (count + 1);
 }
 
 // static void ft_mal(char const *s, char c)
@@ -59,6 +73,18 @@ static int	ft_count_letter(char *s, char c)
 // 		i++;
 // }
 
+static void	*ft_check(const char *s, char c)
+{
+	int	i;
+
+	i = 0;
+	while (s[i] != c && s[i])
+		i++;
+	if (s[i] == c)
+		return (0);
+	return (NULL);
+}
+
 char	**ft_split(char const *s, char c)
 {
 	int		i;
@@ -70,6 +96,7 @@ char	**ft_split(char const *s, char c)
 
 	words = ft_count_word(s, c);
 	str = (char *) s;
+	ft_check(s, c);
 	split = malloc((words + 1) * sizeof(char *));
 	if (!split)
 		return (NULL);
@@ -86,6 +113,7 @@ char	**ft_split(char const *s, char c)
 		}
 		tt = 0;
 		split[t] = malloc(ft_count_letter(str, c) * sizeof(char));
+		// printf("letters = %d\n", ft_count_letter(str, c));
 		if (!split[t])
 			return (NULL);
 		while (str[i] != c)
@@ -96,20 +124,23 @@ char	**ft_split(char const *s, char c)
 		}
 		t++;
 		str = str + i + 1;
-		
 	}
+	// printf("split[t] = %s\n", split[t]);
+	split[t] = '\0';
+	// printf("split[t] = %s\n", split[t]);
 	return (split);
 }
 
 int	main(void)
 {
-	const char	*s = "  bonjour  tout      le monde     ";
-	char 		c = ' ';
+	const char	*s = "bonjour    tout      le monde     ";
+	char 		c = '.';
 	int			i = 0;
 	char		**split = ft_split(s, c);
 
 	while (split[i])
 	{
+		// printf("letters = %d\n", ft_count_letter((char *)s, c));
 		printf("split = %s\n", split[i]);
 		free(split[i]);
 		i++;
