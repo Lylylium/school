@@ -3,21 +3,25 @@
 /*                                                        :::      ::::::::   */
 /*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: manguyen <manguyen@student.42lausanne.ch>  +#+  +:+       +#+        */
+/*   By: manguyen <manguyen@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 19/11/2026 12:37:55 by manguyen          #+#    #+#             */
-/*   Updated: 19/11/2026 13:06:13 by manguyen         ###   ########.ch       */
+/*   Created: 2019/11/20 12:37:55 by manguyen          #+#    #+#             */
+/*   Updated: 2026/11/20 17:09:19 by manguyen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 
 static int	ft_count(int n)
 {
 	int	count;
 
+	count = 1;
 	if (n < 0)
-		n *= (-1);
-	count = 0;
+	{
+		n = -n;
+		count += 1;
+	}	
 	while (n > 0)
 	{
 		n = n / 10;
@@ -33,39 +37,37 @@ char	*ft_itoa(int n)
 	int		count;
 	char	*num;
 
-	i = 0;
-	count = ft_count(n);
-	num = malloc((count + 1) * sizeof(char));
+	i = ft_count(n);
+	count = ft_count(n) + 1;
+	num = malloc((count) * sizeof(char));
 	if (!num)
 		return (NULL);
-	// if (n < 0)
-	// {
-	// 	num[0] = '-';
-	// 	n = n * (-1);
-	// 	i = 1;
-	// }
-	while (count > 0)
+	if (n < 0)
+	{
+		num[0] = '-';
+		num[i + 1] = '\0';
+		n = -n;
+		i += 1;
+	}
+	else
+		num[i] = '\0';
+	while (n > 0)
 	{
 		m = n % 10;
-		num[count] = '0' + m;
-		printf("%c", num[count]);
+		num[i - 2] = '0' + m;
 		n = n / 10;
-		i++;
-		count--;
+		i--;
 	}
-	printf("\n");
-	num[i + 1] = '\0';
-	printf("num = %s\n", num);
 	return	(num);
 }
 int	main(void)
 {
 	// int		i = 0;
-	int 	n = 2468;
-	int		count = ft_count(n);
+	int 	n = -123;
+	// int		count = ft_count(n);
 	char	*result = ft_itoa(n);
 
-	printf("count = %d\n", count);
+	// printf("count = %d\n", count);
 	// while (count--)
 	// 	printf("%c", result[i++]);
 	printf("itoa = %s\n", result);
